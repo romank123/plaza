@@ -1071,48 +1071,48 @@ video {
 
 @font-face {
   font-family: "RobotoRegular";
-  src: url("../../fonts/Roboto/RobotoRegular.eot");
-  src: url("../../fonts/Roboto/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Roboto/RobotoRegular.woff") format("woff");
+  src: url("../fonts/Roboto/RobotoRegular.eot");
+  src: url("../fonts/Roboto/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/RobotoRegular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "RobotoBold";
-  src: url("../../fonts/Roboto/RobotoBold.eot");
-  src: url("../../fonts/Roboto/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Roboto/RobotoBold.woff") format("woff");
+  src: url("../fonts/Roboto/RobotoBold.eot");
+  src: url("../fonts/Roboto/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/RobotoBold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "RobotoMedium";
-  src: url("../../fonts/Roboto/RobotoMedium.eot");
-  src: url("../../fonts/Roboto/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Roboto/RobotoMedium.woff") format("woff");
+  src: url("../fonts/Roboto/RobotoMedium.eot");
+  src: url("../fonts/Roboto/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/RobotoMedium.woff") format("woff");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: "RobotoBlack";
-  src: url("../../fonts/Roboto/RobotoBlack.eot");
-  src: url("../../fonts/Roboto/RobotoBlack.eot?#iefix") format("embedded-opentype"), url("../../fonts/Roboto/RobotoBlack.woff") format("woff");
+  src: url("../fonts/Roboto/RobotoBlack.eot");
+  src: url("../fonts/Roboto/RobotoBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/RobotoBlack.woff") format("woff");
   font-style: normal;
   font-weight: 900;
 }
 
 @font-face {
   font-family: "ArialRegular";
-  src: url("../../fonts/ArialRegular/ArialRegular.eot");
-  src: url("../../fonts/ArialRegular/ArialRegular.eot?#iefix") format("embedded-opentype"), url("../../fonts/ArialRegular/ArialRegular.woff") format("woff");
+  src: url("../fonts/ArialRegular/ArialRegular.eot");
+  src: url("../fonts/ArialRegular/ArialRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialRegular/ArialRegular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "ArialBold";
-  src: url("../../fonts/ArialBold/ArialBold.eot");
-  src: url("../../fonts/ArialBold/ArialBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/ArialBold/ArialBold.woff") format("woff");
+  src: url("../fonts/ArialBold/ArialBold.eot");
+  src: url("../fonts/ArialBold/ArialBold.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialBold/ArialBold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
 }
@@ -1941,7 +1941,7 @@ header ul li:nth-child(5) {
   top: -140%;
   left: -25%;
   border-radius: 20px;
-  font: 16px;
+  fonts: 16px;
   transform: translateY(9px);
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 5px rgba(85, 146, 217, 0.86);
@@ -1959,7 +1959,7 @@ header ul li:nth-child(5) {
   top: -140%;
   left: -25%;
   border-radius: 20px;
-  font: 16px;
+  fonts: 16px;
   transform: translateY(9px);
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 5px rgba(85, 146, 217, 0.86);
@@ -1992,7 +1992,7 @@ header ul li:nth-child(5) {
           animation: odsoky 1s ease-in-out infinite  alternate;
 }
 
-@-webkit-keyframes {
+@-webkit-keyframes vvv {
   0% {
     transform: translateY(6px);
   }
@@ -2001,7 +2001,7 @@ header ul li:nth-child(5) {
   }
 }
 
-@keyframes {
+@keyframes vvv {
   0% {
     transform: translateY(6px);
   }
