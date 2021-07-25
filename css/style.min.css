@@ -626,6 +626,9 @@ video {
 		max-width: 1536px;
 	}
 }
+.color-root-text {
+    color: #9d9d9d;
+  }
 .bg-bright-blue-600 {
     --tw-bg-opacity: 1;
     background-color: rgba(85, 146, 217, var(--tw-bg-opacity));
@@ -757,6 +760,9 @@ video {
 .mt-10 {
 	margin-top: 2.5rem;
 }
+.mb-5 {
+	margin-bottom: 1.25rem;
+}
 .mt-8 {
 	margin-top: 2rem;
 }
@@ -775,11 +781,17 @@ video {
 .mr-0 {
 	margin-right: 0px;
 }
+.ml-0 {
+	margin-left: 0px;
+}
 .ml-auto {
 	margin-left: auto;
 }
 .mb-10 {
 	margin-bottom: 2.5rem;
+}
+.mb-7 {
+	margin-bottom: 1.75rem;
 }
 .block {
 	display: block;
@@ -953,6 +965,9 @@ video {
 .pl-5 {
 	padding-left: 1.25rem;
 }
+.pl-7 {
+	padding-left: 1.75rem;
+}
 .pt-4 {
 	padding-top: 1rem;
 }
@@ -976,6 +991,9 @@ video {
 }
 .pt-2 {
 	padding-top: 0.5rem;
+}
+.pb-5 {
+	padding-bottom: 1.25rem;
 }
 .pl-0 {
 	padding-left: 0px;
@@ -1139,7 +1157,7 @@ body {
     background-color: rgba(148, 51, 145, var(--tw-bg-opacity));
     display: inline-block;
     cursor: pointer;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-top: 0.25rem;
@@ -1168,7 +1186,6 @@ body {
     background-color: rgba(148, 51, 145, var(--tw-bg-opacity));
     display: inline-block;
     cursor: pointer;
-    border-radius: 0.25rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 0.25rem;
@@ -1194,7 +1211,6 @@ body {
     display: inline-block;
     display: none;
     cursor: pointer;
-    border-radius: 0.25rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     padding-top: 0.25rem;
@@ -1360,8 +1376,15 @@ body {
 }
 
 .autorize .cards {
-  width: auto;
-  height: auto;
+  width: 140px;
+  height: 140px;
+}
+
+@media (min-width: 320px) and (max-width: 999px) {
+  .autorize .cards {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .autorize .title {
@@ -1398,6 +1421,24 @@ body {
   height: 24px;
   transform: translate(0%, -50%);
   transform: rotate(-90deg) translate(50%, 0%);
+  background-image: url(../img/shevron.png);
+}
+
+.button-show-more .border-2 a {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-show-more .border-2 a:after {
+  content: "";
+  position: absolute;
+  right: .5em;
+  top: 50%;
+  width: 25px;
+  height: 24px;
+  transform: translate(0%, -50%);
+  transform: rotate(0deg) translate(0, -50%);
   background-image: url(../img/shevron.png);
 }
 
@@ -1596,6 +1637,10 @@ header ul li {
   border-left: 1px solid #C1C0C0;
 }
 
+header ul li:first-child {
+  border-left: 0px solid #C1C0C0;
+}
+
 header ul li:nth-child(5) {
   border-right: 1px solid #C1C0C0;
 }
@@ -1607,25 +1652,28 @@ header ul li:nth-child(5) {
 .main-banner-autorize .bg-banner-autorize {
   background: url("../img/holod.png") no-repeat center;
   background-size: contain;
-  height: 388px;
+  width: 100%;
+  height: 415px;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .main-banner-autorize .bg-banner-autorize {
-    height: 244px;
+    height: 260px;
   }
 }
 
 @media (min-width: 414px) and (max-width: 767px) {
   .main-banner-autorize .bg-banner-autorize {
-    height: 200px;
-    background-position: center bottom;
+    height: 220px;
+    background-position: center -5px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 413px) {
   .main-banner-autorize .bg-banner-autorize {
-    height: 155px;
+    height: 165px;
+    width: 100%;
+    background-position: 10px -5%;
   }
 }
 
@@ -2221,6 +2269,9 @@ header ul li:nth-child(5) {
   .md\:items-center {
 		align-items: center;
 	}
+  .md\:justify-start {
+		justify-content: flex-start;
+	}
   .md\:justify-between {
 		justify-content: space-between;
 	}
@@ -2246,6 +2297,9 @@ header ul li:nth-child(5) {
 	}
   .md\:pl-12 {
 		padding-left: 3rem;
+	}
+  .md\:pl-5 {
+		padding-left: 1.25rem;
 	}
   .md\:text-left {
 		text-align: left;
@@ -2342,6 +2396,9 @@ header ul li:nth-child(5) {
 	}
   .lg\:pt-0 {
 		padding-top: 0px;
+	}
+  .lg\:pl-0 {
+		padding-left: 0px;
 	}
   .lg\:pl-10 {
 		padding-left: 2.5rem;
