@@ -178,6 +178,21 @@ body {
   color: #94268F;
 }
 
+.pref ul li {
+  position: relative;
+  padding-left: 2.5rem;
+  padding-top: 1.3rem;
+}
+
+.pref ul li:before {
+  content: "";
+  background-image: url("../img/list-icon.png");
+  left: 0;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+}
+
 .autorize-1 span {
   font-size: 22px;
   position: relative;
@@ -463,6 +478,44 @@ body {
   background-image: url(../img/shevron.png);
 }
 
+.contacts span {
+  font-size: 22px;
+  position: relative;
+  z-index: 20;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .contacts span {
+    font-size: 14px;
+  }
+}
+
+.contacts .container > span:after {
+  content: "";
+  position: absolute;
+  height: 34px;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background-color: #943391;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .contacts .container > span:after {
+    height: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contacts .container > span:after {
+    background-color: transparent;
+  }
+}
+
 .footer .title {
   font-family: "ArialBold", sans-serif;
   font-style: normal;
@@ -667,6 +720,11 @@ header ul li:first-child {
 
 header ul li:nth-child(5) {
   border-right: 1px solid #C1C0C0;
+}
+
+header .menu .active {
+  background: #d4eefb;
+  color: #000;
 }
 
 .main-banner-autorize .main-banner-bg {

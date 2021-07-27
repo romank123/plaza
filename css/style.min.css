@@ -744,6 +744,10 @@ video {
 	margin-top: 0.75rem;
 	margin-bottom: 0.75rem;
 }
+.my-5 {
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+}
 .my-2 {
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
@@ -755,10 +759,6 @@ video {
 .my-6 {
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
-}
-.my-5 {
-	margin-top: 1.25rem;
-	margin-bottom: 1.25rem;
 }
 .my-8 {
 	margin-top: 2rem;
@@ -1047,11 +1047,11 @@ video {
 .text-base {
 	font-size: 1rem;
 }
-.text-xs {
-	font-size: .75rem;
-}
 .text-sm {
 	font-size: .875rem;
+}
+.text-xs {
+	font-size: .75rem;
 }
 .text-xxs {
 	font-size: .625rem;
@@ -1070,6 +1070,9 @@ video {
 }
 .uppercase {
 	text-transform: uppercase;
+}
+.leading-loose {
+	line-height: 2;
 }
 .leading-8 {
 	line-height: 2rem;
@@ -1306,6 +1309,21 @@ body {
 
 .fa-home {
   color: #94268F;
+}
+
+.pref ul li {
+  position: relative;
+  padding-left: 2.5rem;
+  padding-top: 1.3rem;
+}
+
+.pref ul li:before {
+  content: "";
+  background-image: url("../img/list-icon.png");
+  left: 0;
+  width: 21px;
+  height: 21px;
+  position: absolute;
 }
 
 .autorize-1 span {
@@ -1593,6 +1611,44 @@ body {
   background-image: url(../img/shevron.png);
 }
 
+.contacts span {
+  font-size: 22px;
+  position: relative;
+  z-index: 20;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .contacts span {
+    font-size: 14px;
+  }
+}
+
+.contacts .container > span:after {
+  content: "";
+  position: absolute;
+  height: 34px;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background-color: #943391;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .contacts .container > span:after {
+    height: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contacts .container > span:after {
+    background-color: transparent;
+  }
+}
+
 .footer .title {
   font-family: "ArialBold", sans-serif;
   font-style: normal;
@@ -1794,6 +1850,11 @@ header ul li:first-child {
 
 header ul li:nth-child(5) {
   border-right: 1px solid #C1C0C0;
+}
+
+header .menu .active {
+  background: #d4eefb;
+  color: #000;
 }
 
 .main-banner-autorize .main-banner-bg {
@@ -2363,6 +2424,18 @@ header ul li:nth-child(5) {
 
 @media (min-width: 425px) {
 
+	.\32sm\:mt-5 {
+		margin-top: 1.25rem;
+	}
+
+	.\32sm\:block {
+		display: block;
+	}
+
+	.\32sm\:hidden {
+		display: none;
+	}
+
 	.\32sm\:grid-cols-3 {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
@@ -2484,6 +2557,12 @@ header ul li:nth-child(5) {
 		padding-top: 0px;
 		padding-bottom: 0px;
 	}
+  .md\:pl-5 {
+		padding-left: 1.25rem;
+	}
+  .md\:pl-0 {
+		padding-left: 0px;
+	}
   .md\:pt-7 {
 		padding-top: 1.75rem;
 	}
@@ -2496,17 +2575,23 @@ header ul li:nth-child(5) {
   .md\:pl-12 {
 		padding-left: 3rem;
 	}
-  .md\:pl-5 {
-		padding-left: 1.25rem;
-	}
   .md\:text-left {
 		text-align: left;
 	}
   .md\:text-center {
 		text-align: center;
 	}
+  .md\:font-roboto-medium {
+		font-family: "RobotoMedium", sans-serif;
+	}
   .md\:font-roboto-bold {
 		font-family: "RobotoBold", sans-serif;
+	}
+  .md\:text-sm {
+		font-size: .875rem;
+	}
+  .md\:text-lg {
+		font-size: 1.125rem;
 	}
   .md\:text-2xl {
 		font-size: 1.5rem;
@@ -2516,12 +2601,6 @@ header ul li:nth-child(5) {
 	}
   .md\:text-xl {
 		font-size: 1.25rem;
-	}
-  .md\:text-lg {
-		font-size: 1.125rem;
-	}
-  .md\:text-sm {
-		font-size: .875rem;
 	}
   .md\:shadow-none {
 		--tw-shadow: 0 0 #0000;
@@ -2541,6 +2620,9 @@ header ul li:nth-child(5) {
 	}
   .lg\:-right-12 {
 		right: -3rem;
+	}
+  .lg\:mt-0 {
+		margin-top: 0px;
 	}
   .lg\:ml-0 {
 		margin-left: 0px;
@@ -2600,6 +2682,9 @@ header ul li:nth-child(5) {
 	}
   .lg\:pl-10 {
 		padding-left: 2.5rem;
+	}
+  .lg\:text-lg {
+		font-size: 1.125rem;
 	}
   .lg\:text-2xl {
 		font-size: 1.5rem;
