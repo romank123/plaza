@@ -727,6 +727,52 @@ header .menu .active {
   color: #000;
 }
 
+header .dropbtn {
+  color: #000000;
+  border: none;
+}
+
+header .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+header .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d4eefb;
+  top: 34px;
+  min-width: 118px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+header .dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+header .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+header .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header .dropdown:hover .dropbtn {
+  background-color: #d4eefb;
+}
+
+header .fa {
+  position: absolute;
+  color: #9113AC;
+  bottom: -7px;
+  right: -2px;
+  transform: rotate(315deg);
+}
+
 .main-banner-autorize .main-banner-bg {
   background: linear-gradient(270deg, #d4eefb 0%, rgba(212, 238, 251, 0) 100%);
 }
@@ -942,6 +988,78 @@ header .menu .active {
 
 .main-banner .main-banner-title-mob {
   background: #94268f;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 30;
+  padding-top: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #ffffff;
+  margin: auto;
+  border: 0px solid #7B1FA2;
+  width: 350px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  z-index: 300;
+}
+
+.modal-header {
+  background-color: #ffffff;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: 300px;
+    opacity: 0;
+  }
+  to {
+    top: 50px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: 300px;
+    opacity: 0;
+  }
+  to {
+    top: 50px;
+    opacity: 1;
+  }
+}
+
+.close-btn {
+  display: none;
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .preference span {
