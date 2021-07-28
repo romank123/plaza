@@ -160,6 +160,10 @@ body {
   @apply cursor-pointer text-white bg-bright-purp-600 hover:bg-bright-purp-600 shadow-xl px-4 py-1 inline-block;
 }
 
+.btn-form {
+  @apply cursor-pointer text-white bg-bright-purp-600 hover:bg-bright-purp-600 shadow-xl px-4 py-2 inline-block;
+}
+
 .btn-2 {
   @apply hidden lg:inline-block cursor-pointer text-white bg-bright-purp-600 hover:bg-bright-purp-600 shadow-xl px-10 py-1 inline-block;
 }
@@ -990,6 +994,49 @@ header .fa {
   background: #94268f;
 }
 
+.modal-content2 {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: #ffffff;
+  margin: auto;
+  border: 0px solid #7B1FA2;
+  width: 350px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop1;
+  animation-duration: 0.4s;
+  z-index: 300;
+}
+
+.modal-content2 .close-btn2 {
+  display: none;
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-content2 .close-btn2:hover,
+.modal-content2 .close-btn2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes animatetop1 {
+  from {
+    top: 350px;
+    opacity: 0;
+  }
+  to {
+    top: 60px;
+    opacity: 1;
+  }
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -1021,8 +1068,23 @@ header .fa {
   z-index: 300;
 }
 
-.modal-header {
+.modal-content .modal-header {
   background-color: #ffffff;
+}
+
+.modal-content .close-btn {
+  display: none;
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-content .close-btn:hover,
+.modal-content .close-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @-webkit-keyframes animatetop {
@@ -1045,21 +1107,6 @@ header .fa {
     top: 50px;
     opacity: 1;
   }
-}
-
-.close-btn {
-  display: none;
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close-btn:hover,
-.close-btn:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .preference span {
