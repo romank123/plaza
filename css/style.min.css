@@ -965,9 +965,6 @@ video {
 .p-1 {
 	padding: 0.25rem;
 }
-.p-10 {
-	padding: 2.5rem;
-}
 .p-5 {
 	padding: 1.25rem;
 }
@@ -1896,7 +1893,7 @@ body {
 
 header {
   position: relative;
-  z-index: 20;
+  z-index: 101;
 }
 
 header .title-info {
@@ -1965,6 +1962,7 @@ header .menu ul li:last-child a {
 
 header ul li {
   border-left: 1px solid #C1C0C0;
+  width: 118px;
 }
 
 header ul li:first-child {
