@@ -15,9 +15,7 @@
           href="css/libs.min.css">
     <link rel="stylesheet"
           href="css/style.min.css">
-    <title>@@title</title>
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>@@plaza</title>
 </head>
 <body>
 
@@ -39,7 +37,8 @@
             <div class="w-66 lg:ml-0 ml-5 pr-3 lg:w-auto logo flex-none"><img src="img/logo.svg" alt=""></div>
             <div class="flex flex-row lg:flex-col flex-grow pl-0 lg:pl-5 justify-around">
                 <div class="flex lg:flex-1 justify-between self-center lg:self-stretch">
-                    <div class="title self-end lg:pr-0 pr-3 lg:pb-3 lg:text-2xl text-sm font-roboto-bold text-dark-blue"><p>СЕРВИСНЫЙ ЦЕНТР</p></div>
+                    <div class="title self-end lg:pr-0 pr-3 lg:pb-3 lg:text-2xl text-sm font-roboto-bold text-dark-blue">
+                        <p>СЕРВИСНЫЙ ЦЕНТР</p></div>
                     <div class="contacts hidden lg:block">
                         <div class="phone flex py-3">
                             <div class="flex flex-col px-1.5">
@@ -67,9 +66,9 @@
                 </div>
                 <div class="menu hidden lg:block">
                     <ul class="flex justify-between uppercase my-7 items-center">
-                        <li class="py-1 cursor-pointer hover:lavand-color flex-grow text-center"><a href="index.html"><i
-                                class="fa fa-home pr-2"></i>главная</a></li>
-                        <li class="py-1 cursor-pointer hover:lavand-color flex-grow text-center"><a href="remont-tv.html">ремонт</a>
+                        <li class="py-1 cursor-pointer hover:lavand-color flex-grow text-center"><a href="index.html">главная</a></li>
+                        <li class="py-1 cursor-pointer hover:lavand-color flex-grow text-center"><a
+                                href="remont-tv.html">ремонт</a>
                         </li>
                         <li class="py-1 cursor-pointer hover:lavand-color flex-grow text-center"><a
                                 href="autorize.html">авторизация</a>
@@ -78,46 +77,33 @@
                         </li>
                         <li class="dropdown py-1 cursor-pointer hover:lavand-color flex-grow text-center mr-2">
                             <a class="dropbtn" href="contacts.html">Контакты
-                                <i class="fa fa-2x fa-caret-down"></i>
                             </a>
                             <div class="dropdown-content">
                                 <a href="about.html">о нас</a>
                             </div>
                         </li>
-                        <li class="py-1 cursor-pointer text-center btn-1 relative"><a id="myBtn" class="button" href="#">что с моим заказом?</a>
-                            <!--modal status-->
-                           <div id="bg" class="modal"></div>
-<div class="modal-content p-1 py-7">
-    <div class="modal-header px-6">
-      <span class="close-btn">&times;</span>
-        <p class="font-roboto-regular text-xs text-black text-left">Введите номер телефона, чтобы посмотреть
-            статусы всех заказов или номер заказа,
-            чтобы узнать его статус</p>
-    </div>
-    <div class="modal-body px-10">
-        <div class="flex py-1 mt-5">
-            <img class="border p-2 mr-2" src="img/phone-ico.svg" alt="">
-            <input name="field_phone" class="border border-2 rounded-r px-4 py-2 w-full" type="text" placeholder="Контактный телефон*" />
-        </div>
 
-        <div class="flex py-1 mb-5">
-            <img class="border p-2 mr-2" src="img/number-ico.svg" alt="">
-            <input name="field_phone" class="border border-2 rounded-r px-4 py-2 w-full" type="text" placeholder="Номер заказа*" />
-        </div>
-    </div>
-    <div class="modal-footer">
-        <a class="w-1/2 button py-1 cursor-pointer text-center btn-form relative" href="#">узнать статус</a>
-    </div>
-</div>
-                        </li>
+                        <a id="myBtn" class="button py-1 cursor-pointer text-center btn-1" href="#">что с моим
+                            заказом?</a>
+                        <div id="form_2" class="relative"></div>
+
                     </ul>
                 </div>
                 <!--mob version-->
                 <div class="menu-mob hidden md:block lg:hidden hidden self-center">
-                    <a class="py-1 cursor-pointer text-center btn-mob uppercase border-button text-black bg-transparent text-xs" href="#">что с моим заказом?</a>
-                    <a class="py-1 cursor-pointer text-center btn-mob uppercase text-xs" href="#">вызвать мастера</a>
-                    </div>
-                    <div class="menu-burger text-center shadow p-10">
+                    <a id="myBtn_1"
+                       class="py-1 cursor-pointer text-center btn-mob uppercase border-button text-black bg-transparent text-xs inline-block"
+                       href="#">что с моим заказом?</a>
+                    <a id="myBtn2_2" class="py-1 cursor-pointer text-center btn-mob uppercase text-xs inline-block" href="#">вызвать
+                        мастера</a>
+                    <div id="form_1_1" class="relative top-5 right-6"></div>
+                </div>
+
+                <div id="form_2_2" class="relative top-2"></div>
+
+                <div class="menu-burger text-center shadow p-5 2sm:p-10 flex flex-col justify-between h-full">
+
+                    <div class="flex flex-col justify-between h-full">
                         <img class="mx-auto py-3" src="img/logo-burger.svg" alt="">
 
                         <div class="flex flex-col">
@@ -126,22 +112,20 @@
                             <span class="span-1 font-ArialRegular text-white text-sm">Пн.-пт. с 9.00 до 19.00, Суббота с 10.00 до 16.00 <br>Воскресенье - выходной</span>
                         </div>
 
-                        <ul class="uppercase font-roboto-regular text-base text-white">
-                            <li><a href="remont-tv.html">ремонт</a></li>
-                            <li><a href="autorize.html">авторизации</a></li>
-                            <li><a href="parts.html">запчасти</a></li>
-                            <li><a href="contacts.html">контакты</a></li>
-                            <li><a href="about.html">о нас</a></li>
+                        <ul class="uppercase font-roboto-regular text-base text-white text-left flex-grow">
+                            <li><a class="remont pl-8" href="remont-tv.html">ремонт</a></li>
+                            <li><a class="autorize pl-8" href="autorize.html">авторизации</a></li>
+                            <li><a class="parts pl-8" href="parts.html">запчасти</a></li>
+                            <li><a class="contacts pl-8" href="contacts.html">контакты</a></li>
+                            <li><a class="about pl-8" href="about.html">о нас</a></li>
                         </ul>
+                        <a class="text-base text-white text-left logo pl-8 block self-start" href="#">manager@service-krasnodar.ru</a>
                     </div>
-<!--                <button class="navbar-burger flex items-center text-blue-600 p-3 lg:hidden">-->
-<!--                    <svg class="block h-4 w-4 fill-current-color" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">-->
-<!--                        <title>menu</title>-->
-<!--                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>-->
-<!--                    </svg>-->
-<!--                </button>-->
-                        <!--burger-menu-->
-                        <div class="relative top-0 lg:hidden">
+
+                    
+                </div>
+                <!--burger-menu-->
+                <div class="relative top-0 lg:hidden">
     <div class="burger">
         <span></span>
     </div>
@@ -167,9 +151,9 @@
 
 <!--    </div>-->
 </div>
-                </div>
             </div>
         </div>
+    </div>
 </header>
 
 <!--section not-found-->
@@ -269,8 +253,18 @@
     </div>
 </div>
 <!--section footer-->
-<footer class="footer bg-blue-footer relative pt-1">
+<!--stycky-button-->
+<div class="sticky-button md:hidden">
 
+    <div class="container mx-auto flex justify-center">
+        <div id="sticky" class="grid grid-cols-2 gap-5">
+            <a id="btn5"  class="font-roboto-bold text-9 uppercase button-mob-status text-center border-1" href="#">что с моим заказом?</a>
+            <a id="btn6" class="font-roboto-bold text-9 uppercase button-mob-status text-center border-2" href="#">вызвать мастера</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer bg-blue-footer relative pt-1">
         <div class="container mx-auto">
             <div class="sm:flex sm:mt-8 mb-5">
                 <div class="mt-8 sm:mt-0 sm:w-full flex flex-col sm:flex-row justify-between">
@@ -318,9 +312,9 @@
                     <div class="flex-col times hidden sm:block">
                         <span class="title mb-2 mt-4 md:mt-0 mb-2 border-b-1 block">Режим работы</span>
                         <span class="my-2">Пн.-пт. с 9.00 до 19.00 <br>Суббота с 10.00 до 16.00 <br> Воскресенье - выходной</span>
-                        <a href="#" class="my-2 py-1 cursor-pointer text-center btn-1 w-full text-xxs">ЧТО С МОИМ
+                        <a id="btn3" href="#" class="my-2 py-1 cursor-pointer text-center btn-1 w-full text-xxs">ЧТО С МОИМ
                             ЗАКАЗОМ?</a></span>
-                        <a href="#" class="my-2 py-1 cursor-pointer text-center btn-1 w-full text-xxs">ВЫЗВАТЬ
+                        <a id="btn4" href="#" class="my-2 py-1 cursor-pointer text-center btn-1 w-full text-xxs">ВЫЗВАТЬ
                             МАСТЕРА</a></span>
                     </div>
                 </div>
