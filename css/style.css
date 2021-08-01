@@ -755,6 +755,11 @@ header .menu ul li a {
   color: #000000;
 }
 
+header .menu .home {
+  background: url("../img/home-logo-main.svg") no-repeat left center;
+  padding-left: 1.8rem;
+}
+
 header .menu ul li:last-child a {
   color: #ffffff;
 }
@@ -820,6 +825,16 @@ header .fa {
   bottom: -7px;
   right: -2px;
   transform: rotate(315deg);
+}
+
+header .triangle-bottomright {
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #9113AC;
+  border-left: 10px solid transparent;
 }
 
 .main-banner-autorize .main-banner-bg {
