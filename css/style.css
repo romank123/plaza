@@ -1480,6 +1480,21 @@ header .relative.top-0 {
   width: 32px;
 }
 
+.modal-content2-footer .close-btn2 {
+  display: none;
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-content2-footer .close-btn2 .close-btn2:hover,
+.modal-content2-footer .close-btn2 .close-btn2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .modal-content2-footer .close-btn {
   display: none;
   color: white;

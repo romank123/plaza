@@ -1129,6 +1129,9 @@ video {
 .uppercase {
 	text-transform: uppercase;
 }
+.leading-8 {
+	line-height: 2rem;
+}
 .leading-normal {
 	line-height: 1.5;
 }
@@ -1137,9 +1140,6 @@ video {
 }
 .leading-6 {
 	line-height: 1.5rem;
-}
-.leading-8 {
-	line-height: 2rem;
 }
 .leading-none {
 	line-height: 1;
@@ -2847,6 +2847,21 @@ header .relative.top-0 {
 .modal-content2-footer .modal-body img {
   height: 32px;
   width: 32px;
+}
+
+.modal-content2-footer .close-btn2 {
+  display: none;
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-content2-footer .close-btn2 .close-btn2:hover,
+.modal-content2-footer .close-btn2 .close-btn2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .modal-content2-footer .close-btn {
