@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 @layer components {
+  .text-28 {
+    font-size: 28px;
+  }
   .text-9 {
     font-size: 9px;
   }
@@ -163,12 +166,16 @@ body {
   @apply cursor-pointer text-white bg-bright-purp-600 hover:bg-bright-purp-600 shadow-xl px-4 py-1 inline-block;
 }
 
+.btn-header {
+  @apply cursor-pointer text-white bg-bright-purp-600 hover:bg-bright-purp-600 shadow-xl px-4 inline-block;
+}
+
 .btn-form {
-  @apply cursor-pointer text-white bg-bright-purp-600 hover:bg-bright-purp-600 shadow-xl px-4 py-2 inline-block;
+  @apply cursor-pointer text-white bg-bright-purp-600 hover:bg-bright-purp-600 shadow-xl py-2 inline-block;
 }
 
 .btn-2 {
-  @apply hidden lg:inline-block cursor-pointer text-white bg-bright-purp-600 hover:bg-bright-purp-600 shadow-xl px-10 py-1 inline-block;
+  @apply hidden lg-1:inline-block cursor-pointer text-white bg-bright-purp-600 hover:bg-bright-purp-600 shadow-xl px-10 py-1 inline-block;
 }
 
 .btn-3 {
@@ -354,6 +361,12 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  .burger {
+    top: -12px;
+  }
+}
+
 .menu-burger ul li {
   border-left: 0px !important;
   border-right: 0px !important;
@@ -420,7 +433,7 @@ body {
 }
 
 .menu-burger {
-  top: 55px;
+  top: 75px;
   width: 360px;
   min-height: 710px;
   background: #9113AC;
@@ -753,28 +766,31 @@ header .menu ul li a {
   font-size: 12px;
   line-height: 24px;
   color: #000000;
+  width: 103%;
+  height: 100%;
+  display: block;
+  border-right: 1px solid #C1C0C0;
 }
 
 header .menu .home {
-  background: url("../img/home-logo-main.svg") no-repeat left center;
-  padding-left: 1.8rem;
+  background: url("../img/home-logo-main.svg") no-repeat 5% center;
 }
 
 header .menu ul li:last-child a {
   color: #ffffff;
 }
 
+header .menu ul .dropdown-content > a {
+  border-right: 0px solid #C1C0C0;
+}
+
 header ul li {
-  border-left: 1px solid #C1C0C0;
   width: 118px;
+  margin: 0 3px;
 }
 
 header ul li:first-child {
   border-left: 0px solid #C1C0C0;
-}
-
-header ul li:nth-child(5) {
-  border-right: 1px solid #C1C0C0;
 }
 
 header .menu .active {
@@ -790,20 +806,22 @@ header .dropbtn {
 header .dropdown {
   position: relative;
   display: inline-block;
+  z-index: 10;
 }
 
 header .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #d4eefb;
-  top: 34px;
+  background: transparent;
+  top: 32px;
+  padding-top: 5px;
   min-width: 118px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 100;
+  z-index: 0;
 }
 
 header .dropdown-content a {
   color: black;
+  background-color: #d4eefb;
   text-decoration: none;
   display: block;
 }
@@ -816,10 +834,6 @@ header .dropdown:hover .dropdown-content {
   display: block;
 }
 
-header .dropdown:hover .dropbtn {
-  background-color: #d4eefb;
-}
-
 header .fa {
   position: absolute;
   color: #9113AC;
@@ -830,12 +844,28 @@ header .fa {
 
 header .triangle-bottomright {
   position: absolute;
-  bottom: 0;
-  right: 2%;
+  bottom: 1px;
+  right: 1%;
   width: 0;
   height: 0;
   border-bottom: 10px solid #9113AC;
   border-left: 10px solid transparent;
+}
+
+header .relative.top-0 {
+  top: 0;
+}
+
+@media (min-width: 320px) {
+  header .relative.top-0 {
+    left: -25px;
+  }
+}
+
+@media (min-width: 768px) {
+  header .relative.top-0 {
+    left: -15px;
+  }
 }
 
 .main-banner-autorize .main-banner-bg {
@@ -1002,14 +1032,14 @@ header .triangle-bottomright {
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 999px) {
   .main-banner {
     position: relative;
     top: -15px;
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 999px) {
   .main-banner .main-banner-bg {
     padding-top: 15px;
   }
@@ -1022,7 +1052,7 @@ header .triangle-bottomright {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 999px) {
   .main-banner .main-banner-bg {
     background: #94268f;
   }
@@ -1061,7 +1091,7 @@ header .triangle-bottomright {
 .modal-content2 {
   display: block;
   position: absolute;
-  top: -15px;
+  top: 0;
   left: 0;
   background-color: #ffffff;
   margin: auto;
@@ -1083,6 +1113,60 @@ header .triangle-bottomright {
   .modal-content2 {
     width: 280px;
   }
+}
+
+.modal-content2 input {
+  font-family: "RobotoRegular", sans-serif;
+  color: black;
+}
+
+.modal-content2 input::placeholder {
+  font-size: 9px;
+  font-family: "RobotoRegular", sans-serif;
+  line-height: 11px;
+  color: black;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .modal-content2 input::placeholder {
+    font-size: 9px;
+  }
+}
+
+.modal-content2 textarea::placeholder {
+  font-size: 9px;
+  font-family: "RobotoRegular", sans-serif;
+  line-height: 11px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .modal-content2 textarea::placeholder {
+    font-size: 9px;
+  }
+}
+
+.modal-content2 textarea {
+  font-size: 9px;
+  font-family: "RobotoRegular", sans-serif;
+  line-height: 11px;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .modal-content2 {
+    font-size: 9px;
+  }
+}
+
+.modal-content2 .modal-body img {
+  height: 32px;
+}
+
+.modal-content2 .items-start img {
+  width: 32px;
 }
 
 .modal-content2 .close-btn2 {
@@ -1107,7 +1191,7 @@ header .triangle-bottomright {
       opacity: 0;
     }
     to {
-      top: -15px;
+      top: 0;
       opacity: 1;
     }
   }
@@ -1159,6 +1243,30 @@ header .triangle-bottomright {
   .modal-content {
     width: 280px;
   }
+}
+
+.modal-content input {
+  font-family: "RobotoRegular", sans-serif;
+  color: black;
+}
+
+.modal-content input::placeholder {
+  font-size: 9px;
+  font-family: "RobotoRegular", sans-serif;
+  line-height: 11px;
+  color: black;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .modal-content input::placeholder {
+    font-size: 9px;
+  }
+}
+
+.modal-content .modal-body img {
+  height: 32px;
+  width: 32px;
 }
 
 .modal-content .modal-header {
