@@ -3087,6 +3087,9 @@ header .relative.top-0 {
   .md\:text-dark-blue {
     color: #26276A;
   }
+  .md\:mt-5 {
+		margin-top: 1.25rem;
+	}
   .md\:mt-0 {
 		margin-top: 0px;
 	}
