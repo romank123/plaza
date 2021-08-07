@@ -3266,6 +3266,12 @@ header .relative.top-0 {
 		padding-top: 0px;
 		padding-bottom: 0px;
 	}
+  .lg-1\:pt-5 {
+		padding-top: 1.25rem;
+	}
+  .lg-1\:pb-3 {
+		padding-bottom: 0.75rem;
+	}
   .lg-1\:pl-5 {
 		padding-left: 1.25rem;
 	}
