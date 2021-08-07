@@ -37,7 +37,7 @@
 
         <div class="container mx-auto flex items-center justify-between">
             <div class="flex flex-grow lg-1:pt-5 lg-1:pb-3 items-center lg-1:items-start">
-                <div class="w-66 lg-1:ml-0 ml-5 lg-1:w-auto logo flex-none"><a href="index.html"><img src="img/logo.svg" alt=""></a></div>
+                <div class="w-66 mr-2 md:mr-0 lg-1:w-auto logo flex-none"><a href="index.html"><img src="img/logo.svg" alt=""></a></div>
                 <div class="flex flex-row lg-1:flex-col w-full pl-0 lg-1:pl-5 md:justify-evenly">
                     <div class="w-full md:w-auto flex lg-1:flex-1 justify-between self-center lg-1:self-stretch">
                         <div class="title self-start lg-1:pt-4 lg-1:pr-0 pr-3 lg-1:text-2xl text-sm font-roboto-bold text-dark-blue">
@@ -76,7 +76,7 @@
                                     href="remont-tv.html">ремонт</a>
                             </li>
                             <li class="py-1 cursor-pointer hover:lavand-color flex-grow text-center"><a
-                                    href="autorize.html">авторизация</a>
+                                    href="autorize.html">авторизации</a>
                             </li>
                             <li class="py-1 cursor-pointer hover:lavand-color flex-grow text-center"><a
                                     href="parts.html">запчасти</a>
@@ -165,7 +165,7 @@
 </section>
 <!--section repair-->
 <div class="repair container mx-auto">
-    <span class="pl-7 text-white py-1 rounded">Ремонты нашего сервиса</span>
+    <span class="pl-7 text-white py-1 rounded text-sm md:text-lg lg-1:text-22 leading-7">Ремонты нашего сервиса</span>
     <div class="py-10 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-5">
         <!--Card 1-->
         <div class="cards rounded overflow-hidden flex flex-col">
@@ -301,10 +301,12 @@
                     <div class="flex-col times hidden sm:block">
                         <span class="title mb-2 mt-4 md:mt-0 mb-2 border-b-1 block">Режим работы</span>
                         <span class="my-2">Пн.-пт. с 9.00 до 19.00 <br>Суббота с 10.00 до 16.00 <br> Воскресенье - выходной</span>
-                        <a id="btn3" href="#" class="my-2 py-1 cursor-pointer text-center btn-1 w-full text-xxs">ЧТО С МОИМ
-                            ЗАКАЗОМ?</a></span>
-                        <a id="btn4" href="#" class="my-2 py-1 cursor-pointer text-center btn-1 w-full text-xxs">ВЫЗВАТЬ
-                            МАСТЕРА</a></span>
+                        <div id="formBtn3" class="relative"></div>
+                        <button id="btn3" class="my-2 py-1 cursor-pointer text-center btn-1 w-full text-xxs">ЧТО С МОИМ
+                            ЗАКАЗОМ?</button></span>
+                        <div id="formBtn4" class="relative"></div>
+                        <button id="btn4" class="my-2 py-1 cursor-pointer text-center btn-1 w-full text-xxs">ВЫЗВАТЬ
+                            МАСТЕРА</button></span>
                     </div>
                 </div>
             </div>

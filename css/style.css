@@ -158,7 +158,7 @@ body {
 }
 
 .btn-mob {
-  @apply cursor-pointer text-white bg-bright-purp-600 hover:bg-bright-purp-600 shadow-xl px-2 py-1 inline-block rounded-lg;
+  @apply cursor-pointer text-white bg-bright-purp-600 hover:bg-bright-purp-600 px-2 py-1 inline-block rounded-lg;
   width: 160px;
 }
 
@@ -280,7 +280,6 @@ body {
 }
 
 .autorize span {
-  font-size: 22px;
   position: relative;
   z-index: 20;
 }
@@ -297,6 +296,24 @@ body {
   padding-bottom: 0.25rem;
   background-color: #5592d9;
   border-radius: 0.25rem;
+}
+
+@media (min-width: 320px) {
+  .autorize .container > span:after {
+    top: -5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .autorize .container > span:after {
+    top: -3px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .autorize .container > span:after {
+    top: 0px;
+  }
 }
 
 .autorize .-z-10 {
@@ -858,13 +875,13 @@ header .relative.top-0 {
 
 @media (min-width: 320px) {
   header .relative.top-0 {
-    left: -25px;
+    left: -10px;
   }
 }
 
 @media (min-width: 768px) {
   header .relative.top-0 {
-    left: -15px;
+    left: 0;
   }
 }
 
@@ -1084,6 +1101,34 @@ header .relative.top-0 {
   background: #94268f;
 }
 
+.main-banner .border-custom {
+  border: 1px solid #94268F;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: -15px;
+  background-color: white;
+}
+
+.main-banner .border-l-7-custom:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 10%;
+  width: 2px;
+  height: 4px;
+  background-color: #94268F;
+  height: 80%;
+}
+
+.main-banner .btn-more {
+  bottom: -14px;
+  right: 10px;
+}
+
+.main-banner #more {
+  display: none;
+}
+
 #bg2 {
   display: block;
 }
@@ -1301,10 +1346,216 @@ header .relative.top-0 {
   }
 }
 
+.modal-content-footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  background-color: #ffffff;
+  margin: auto;
+  border: 0px solid #7B1FA2;
+  width: 350px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-animation-name: animatetop-footer;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop-footer;
+  animation-duration: 0.4s;
+  z-index: 300;
+}
+
+.modal-content-footer img {
+  max-width: 39px;
+}
+
+@media (max-width: 350px) {
+  .modal-content-footer {
+    width: 280px;
+  }
+}
+
+.modal-content-footer input {
+  font-family: "RobotoRegular", sans-serif;
+  color: black;
+}
+
+.modal-content-footer input::placeholder {
+  font-size: 9px;
+  font-family: "RobotoRegular", sans-serif;
+  line-height: 11px;
+  color: black;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .modal-content-footer input::placeholder {
+    font-size: 9px;
+  }
+}
+
+.modal-content-footer .modal-body img {
+  height: 32px;
+  width: 32px;
+}
+
+.modal-content-footer .modal-header {
+  background-color: #ffffff;
+}
+
+.modal-content-footer .close-btn {
+  display: none;
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-content-footer .close-btn:hover,
+.modal-content-footer .close-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  @keyframes animatetop-footer {
+    from {
+      bottom: 300px;
+      opacity: 0;
+    }
+    to {
+      bottom: 0px;
+      opacity: 1;
+    }
+  }
+}
+
+.modal-content2-footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  background-color: #ffffff;
+  margin: auto;
+  border: 0px solid #7B1FA2;
+  width: 350px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-animation-name: animatetop-footer;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop-footer;
+  animation-duration: 0.4s;
+  z-index: 300;
+}
+
+.modal-content2-footer img {
+  max-width: 39px;
+}
+
+@media (max-width: 350px) {
+  .modal-content2-footer {
+    width: 280px;
+  }
+}
+
+.modal-content2-footer input {
+  font-family: "RobotoRegular", sans-serif;
+  color: black;
+}
+
+.modal-content2-footer input::placeholder {
+  font-size: 9px;
+  font-family: "RobotoRegular", sans-serif;
+  line-height: 11px;
+  color: black;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .modal-content2-footer input::placeholder {
+    font-size: 9px;
+  }
+}
+
+.modal-content2-footer .modal-body img {
+  height: 32px;
+  width: 32px;
+}
+
+.modal-content2-footer .close-btn {
+  display: none;
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-content2-footer .close-btn:hover,
+.modal-content2-footer .close-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content2-footer textarea::placeholder {
+  font-size: 9px;
+  font-family: "RobotoRegular", sans-serif;
+  line-height: 11px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .modal-content2-footer textarea::placeholder {
+    font-size: 9px;
+  }
+}
+
+.modal-content2-footer textarea {
+  font-size: 9px;
+  font-family: "RobotoRegular", sans-serif;
+  line-height: 11px;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .modal-content2-footer textarea {
+    font-size: 9px;
+  }
+}
+
+@media (min-width: 768px) {
+  @keyframes animatetop-footer {
+    from {
+      bottom: 300px;
+      opacity: 0;
+    }
+    to {
+      bottom: 0px;
+      opacity: 1;
+    }
+  }
+}
+
 .preference span {
-  font-size: 22px;
   position: relative;
   z-index: 20;
+}
+
+@media (min-width: 320px) {
+  .preference span {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .preference span {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .preference span {
+    font-size: 22px;
+  }
 }
 
 .preference .container > span:after {
@@ -1319,6 +1570,24 @@ header .relative.top-0 {
   padding-bottom: 0.25rem;
   background-color: #943391;
   border-radius: 0.25rem;
+}
+
+@media (min-width: 320px) {
+  .preference .container > span:after {
+    top: -5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .preference .container > span:after {
+    top: -3px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .preference .container > span:after {
+    top: 0px;
+  }
 }
 
 .preference ul {
@@ -1370,8 +1639,6 @@ header .relative.top-0 {
   display: block;
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
-  line-height: 26px;
   text-transform: uppercase;
   position: relative;
 }
@@ -1404,8 +1671,6 @@ header .relative.top-0 {
   font-family: "RobotoRegular", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
-  line-height: 26px;
   text-transform: uppercase;
   color: #173152;
 }
@@ -1414,8 +1679,6 @@ header .relative.top-0 {
   font-family: "RobotoRegular", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
   color: #173152;
 }
 
@@ -1598,7 +1861,7 @@ header .relative.top-0 {
 
 .autorize-1 .bottom .tooltip::after {
   top: -12%;
-  left: 30%;
+  left: 7%;
   transform: rotate(180deg);
 }
 
