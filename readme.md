@@ -27,6 +27,8 @@
 * кроссбраузерность: IE10+, Chrome, Firefox, Opera
 * сайт адаптирован под современные браузеры и мобильные устройства
 
+![plaza](https://romank123.github.io/images/io-plaza.jpg)
+
 
 
 
